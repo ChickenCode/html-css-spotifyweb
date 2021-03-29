@@ -1,0 +1,314 @@
+.flex {
+    display: flex;
+}
+
+* {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.bkg-gray {
+    background-color: #77797e;
+    font-size: x-large;
+    padding: 1px 10px;
+}
+
+.gray {
+    color: #77797e;
+    opacity: 0.9;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    justify-content: flex-start;
+    background-color: #141922;
+}
+
+main {
+    padding-top: 80px;
+}
+
+.sidebar {
+    background-color: black;
+    width: 200px;
+    min-width: 200px;
+}
+
+.vertical-container {
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 80px);
+    position: fixed;
+    padding-bottom: 10px;
+    overflow: auto;
+}
+
+.main-logo {
+    height: 80px;
+    align-items: center;
+}
+
+.main-logo img {
+    width: 150px;
+}
+
+.sidebar ul {
+    padding: unset;
+}
+
+.sidebar-padding {
+    padding-left: 20px;
+}
+
+li .sidebar-padding {
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
+
+
+.sidebar li img {
+    max-width: 50px;
+}
+
+.various-playlists li {
+    margin-bottom: 15px;
+}
+
+
+.download div {
+    border-bottom: 1px solid #77797e;
+    width: 150px;
+    margin-left: 20px;
+}
+
+
+.download img {
+    width: 30px;
+    background-color: gray;
+    padding: 0px 2px;
+    border-radius: 50%;
+}
+
+.main-nav-1 {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;
+    align-items: center;
+    padding-right: 30px;
+    position: fixed;
+    right: 0;
+    width: calc(100% - 200px);
+}
+
+.main-nav-1 p {
+    border: 2px white solid;
+    padding: 10px 30px;
+    border-radius: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.main-section {
+    background-color: #141922;
+    padding-bottom: 200px;
+    overflow: auto;
+}
+
+.main-section main {
+    border-top: 80px;
+}
+
+.main-section main nav ul{
+    justify-content: center;
+}
+
+.main-section main nav ul li {
+    padding: 20px 15px;
+}
+
+.main-section main nav ul li span {
+    border-bottom: yellowgreen 3px solid;
+    padding-bottom: 2px;
+}
+
+
+.playlist ul {
+    justify-content: space-between;
+    padding-left: 20px;
+
+}
+
+.playlist ul li {
+    padding-right: 20px;
+    width: calc(100% / 6);
+}
+
+.playlist ul li img {
+  max-height: 200px;
+}
+
+.img-radius {
+    border-radius: 50%;
+}
+
+.mini-player {
+    position: fixed;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #282828;
+    padding-top: 15px;
+}
+
+.mini-player img {
+    max-height: 50px;
+    margin: 0 10px;
+}
+
+
+
+
+.fa-play {
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 2px 3px 2px 7px;
+}
+
+.barra {
+    width: 70%;
+    height: 3px;
+    background-color: #77797e;
+    margin: 0 30px;
+    border-radius: 10px;
+}
+
+.barretta {
+    position: relative;
+    width: 20%;
+    background-color: white;
+    border-radius: 10px;
+    height: 3px;
+}
+
+.central-player {
+    width: 60%;
+}
+
+.side-player {
+    width: 20%;
+}
+
+
+.volume-barra {
+    width: 60%;
+    height: 3px;
+    background-color: #77797e;
+    border-radius: 10px;
+}
+
+.volume-barretta {
+    background-color: white;
+    width: 20%;
+    height: 3px;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+
+@media screen and (max-width 576px) {
+
+}
+
+@media screen and (max-width 768px) {
+    
+}
+
+@media screen and (max-width 992px) {
+    .md-25 {
+        width: calc(100% / 4);
+    }
+
+}
+
+.grow {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.whiting:hover {
+    color: white;
+}
+
+
+
+.barella:hover {
+    background-color: yellowgreen;
+}
+
+.pallina {
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: -7.5px;
+    top: -5.5px;
+    opacity: 0;
+}
+
+.pallina:hover {
+    opacity: 1;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    padding: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.overlay i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overlay:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gray.bold.inline-block.whiting span {
+    color: inherit;
+}
+
+
+
+
+
+
