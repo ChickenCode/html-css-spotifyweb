@@ -161,13 +161,13 @@ main {
     height: 80px;
     width: 100%;
     background-color: #282828;
-    padding-top: 15px;
     z-index: 3;
+    justify-content: flex-start;
 }
 
 .mini-player img {
     max-height: 50px;
-    margin: 0 10px;
+    margin: 0px 10px;
 }
 
 
@@ -180,12 +180,15 @@ main {
 }
 
 .barra {
-    width: 70%;
+    flex-grow: 1;
+    min-width: 100px;
     height: 3px;
     background-color: #77797e;
     margin: 0 30px;
     border-radius: 10px;
 }
+
+
 
 .barretta {
     position: relative;
@@ -195,17 +198,15 @@ main {
     height: 3px;
 }
 
-.central-player {
-    width: 60%;
-}
-
-.side-player {
-    width: 20%;
-}
-
-
 .volume-barra {
     width: 60%;
+    height: 3px;
+    background-color: #77797e;
+    border-radius: 10px;
+}
+
+.volume-barra-2 {
+    width: 30%;
     height: 3px;
     background-color: #77797e;
     border-radius: 10px;
@@ -289,6 +290,32 @@ main {
     visibility: hidden;
 }
 
+.side-player {
+    flex-basis: 33%;
+}
+
+
+.side-player-2 {
+    flex-basis: 33%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.margin-percent {
+    margin-left: 10%;
+}
+
+.central-player {
+    flex-basis: 33%;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.icons {
+    flex-wrap: nowrap;
+}
+
 
 @media screen and (max-width: 576px) {
 
@@ -320,6 +347,7 @@ main {
         transform: translatey(-20%);
         margin-right: 0;
     }
+
 }
 
 @media screen and (min-width: 578px) and (max-width: 750px) {

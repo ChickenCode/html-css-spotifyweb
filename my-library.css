@@ -108,3 +108,52 @@
 .v-al-b {
     transform: translate(10%, 25%);
 }
+
+.my-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.self-end {
+    align-self: flex-end;
+}
+
+.self-start {
+    align-self: flex-start;
+}
+
+.self-end {
+    align-self: center;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-basis-100 {
+    flex-basis: 100%;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.margin-left-a {
+    margin-left: 10%;
+}
+
+.margin-right-a {
+    margin-right: 10%;
+}
+
+.margin-both {
+    margin: 0 20%;
+}
+
